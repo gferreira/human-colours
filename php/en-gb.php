@@ -70,7 +70,7 @@ $saturation1 = saturationName($s1);
 $lightness1 = lightnessName($l1);
 
 echo '<body style="background: '.returnColor($h1,$s1,$l1).'">';
-echo '<p>You are probably looking at a'.$saturation1.$lightness1.$colour1.' browser screen.</p>';
+echo '<p>Chances are you are looking at a'.$saturation1.$lightness1.$colour1.' browser screen.</p>';
 echo '</body>';
 
 ?>
