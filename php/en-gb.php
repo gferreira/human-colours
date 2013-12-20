@@ -47,16 +47,15 @@ function returnColor($h,$s,$l) {
 <title>A random coloured background.</title>
 <style>
 body {
+	font: 120%/1.5 georgia, serif;
 	background: white;
 	margin: 0;
 	padding: 0;
 }
 p {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	max-width: 24em;
-	margin: 0 1em 1em;
+	margin: 0;
+	padding: 1em;
 	background: rgba(255,255,255,.5)
 }
 </style>
