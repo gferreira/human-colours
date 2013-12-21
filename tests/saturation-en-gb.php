@@ -68,7 +68,7 @@ div {
 }
 </style>
 
-<h1>Trying to map the correct human saturation names to hsl-saturation values</h1>
+<h1>Trying to map the correct human saturation names to hsl-saturation values.</h1>
 <p>In order to set the correct saturation names, colour is set to 120 (green), and lightness to 50%. So <code>hsl(120,65%,25%)</code> might result in something like <q>A rather saturated, dark green</q>. I <em>guess</em> this is a good setting for analyzing saturation, if you know a better setting, let me know. </p>
 
 <p>In this next table you'll see the value of the saturation, and the human name behind it. If you know a better layout for such a table, please let me know. </p>

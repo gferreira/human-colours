@@ -63,7 +63,7 @@ div {
 }
 </style>
 
-<h1>Trying to map the correct human colour names to hsl-hue values</h1>
+<h1>Trying to map the correct human colour names to hsl-hue values.</h1>
 <p>In order to set the correct colour names, saturation is set to 100%, and lightness to 50%. So <code>hsl(120,100%,50%)</code> might result in something like <q>A highly saturated green</q>. I <em>guess</em> this is a good setting for analyzing colours, if you know a better setting, let me know. Colours like <em>brown</em> will not appear with this setting — brown might be described like <q>an unsaturated, dark red</q> instead.</p>
 
 <p>In this next table you'll see the value of the hue, and the human name behind it. If you know a better layout for such a table, please let me know. </p>
