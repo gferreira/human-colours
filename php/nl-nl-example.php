@@ -1,20 +1,20 @@
 <?php 
 /* hue */
 function hueName($h) {
-	if ($h < 15) { $hue = 'rode'; }
+	if ($h < 15) { $hue = 'rood'; }
 	if ($h === 15) { $hue = 'rood-oranje'; }
 	if ($h > 15) { $hue = 'oranje'; }
-	if ($h > 45) { $hue = 'gele'; }
-	if ($h > 70) { $hue = 'limoen-groene'; }
-	if ($h > 79) { $hue = 'groene'; }
+	if ($h > 45) { $hue = 'geel'; }
+	if ($h > 70) { $hue = 'limoen-groen'; }
+	if ($h > 79) { $hue = 'groen'; }
 	if ($h > 163) { $hue = 'cyaan'; }
-	if ($h > 193) { $hue = 'blauwe'; }
+	if ($h > 193) { $hue = 'blauw'; }
 	if ($h > 240) { $hue = 'indigo'; }
-	if ($h > 260) { $hue = 'violette'; }
-	if ($h > 270) { $hue = 'paarse'; }
+	if ($h > 260) { $hue = 'violet'; }
+	if ($h > 270) { $hue = 'paars'; }
 	if ($h > 291) { $hue = 'magenta'; }
 	if ($h > 327) { $hue = 'roze'; }
-	if ($h > 344) { $hue = 'rode'; }
+	if ($h > 344) { $hue = 'rood'; }
 	return $hue;
 }
 function saturationName($s) {
