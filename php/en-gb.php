@@ -17,67 +17,29 @@ function hueName($h) {
 	if ($h > 344) { $hue = 'red'; }
 	return $hue;
 }
+/* saturation */
 function saturationName($s) {
-	if($s < 10) { $sat =  'n almost hueless'; }
-	if($s > 9) { $sat =  ' very unsaturated'; }
-	if($s > 30) { $sat =  'n unsaturated'; }
-	if($s > 60) { $sat =  ' rather saturated'; }
-	if($s > 80) { $sat =  ' highly saturated'; }
+	if($s < 10) { $sat =  'almost hueless'; }
+	if($s > 9) { $sat =  'very unsaturated'; }
+	if($s > 30) { $sat =  'unsaturated'; }
+	if($s > 60) { $sat =  'rather saturated'; }
+	if($s > 80) { $sat =  'highly saturated'; }
 	return $sat;
 }
+/* lightness */
 function lightnessName($l) {
-	if($l < 10) { $light = ', almost black, '; }
-	if($l > 9) { $light = ', very dark '; }
-	if($l > 22) { $light = ', dark '; }
-	if($l > 30) { $light = ' '; }
-	if($l > 60) { $light = ', light '; }
-	if($l > 80) { $light = ', very light '; }
-	if($l > 94) { $light = ', almost white, '; }
+	if($l < 10) { $light = 'almost black'; }
+	if($l > 9) { $light = 'very dark'; }
+	if($l > 22) { $light = 'dark'; }
+	if($l > 30) { $light = 'normal'; }
+	if($l > 60) { $light = 'light'; }
+	if($l > 80) { $light = 'very light'; }
+	if($l > 94) { $light = 'almost white'; }
 	return $light;
 }
+/* hsl */
 function returnColor($h,$s,$l) {
 	return 'hsl('.$h.', '.$s.'%, '.$l.'%)';
 }
-//example usage:
-?>
-<!doctype html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A random coloured background</title>
-<style>
-body {
-	font: 120%/1.5 georgia, serif;
-	background: white;
-	margin: 0;
-	padding: 0;
-}
-p {
-	max-width: 24em;
-	margin: 0;
-	padding: 1em;
-	background: rgba(255,255,255,.5)
-}
-</style>
-<?php
-
-
-$h1 = rand(0,360);
-$s1 = rand(0,100);
-$l1 = rand(0,100);
-$colour1 = hueName($h1);
-$saturation1 = saturationName($s1);
-$lightness1 = lightnessName($l1);
-
-echo '<body style="background: '.returnColor($h1,$s1,$l1).'">';
-echo '<p>Chances are you are looking at a'.$saturation1.$lightness1.$colour1.' browser screen.</p>';
-echo '</body>';
 
 ?>
-
-
-
-
-
-
-
