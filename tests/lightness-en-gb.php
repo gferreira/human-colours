@@ -44,7 +44,7 @@ function returnColor($h,$s,$l) {
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Correct names for saturation values.</title>
+<title>Correct names for saturation values</title>
 <style>
 body {
 	font: 120%/1.5 georgia, serif;
